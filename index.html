@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+<html lang="en"> <!-- Declares the language of the document -->
+<head>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the webpage responsive on mobile devices -->
+    <title>Travelogue Board</title> <!-- Sets the title of the webpage -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links to the external CSS file -->
+</head>
+<body>
+    <div id="app"> <!-- Main container for the application -->
+        <header> <!-- Top section of the page -->
+            <h1>Travelogue</h1> <!-- Displays the main title -->
+            <div id="auth-section"> <!-- Section for authentication forms -->
+                <form id="login-form"> <!-- Login form -->
+                    <input type="text" id="username" placeholder="Username" required /> <!-- Input field for username -->
+                    <div> <!-- Wrapper for password and visibility toggle -->
+                        <input type="password" id="password" placeholder="Password" required /> <!-- Input field for password -->
+                        <input type="checkbox" id="show-password"> <!-- Checkbox for toggling password visibility -->
+                        <label for="show-password">Show Password</label> <!-- Label for the password toggle -->
+                    </div>
+                    <button type="submit">Login</button> <!-- Login button -->
+                </form>
+                <button id="logout-button" style="display: none;">Logout</button> <!-- Logout button (hidden initially) -->
+                <button id="signup-button">Sign Up</button> <!-- Button to open the signup modal -->
+            </div>
+        </header>
+        <main id="board"> <!-- Main content area for displaying notes -->
+            <!-- Notes will be dynamically added here -->
+        </main>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signup-modal"> <!-- Modal container for the signup form -->
+        <h2>Sign Up</h2> <!-- Title for the signup modal -->
+        <form id="signup-form"> <!-- Signup form -->
+            <input type="text" id="signup-username" placeholder="Username" required /> <!-- Input field for signup username -->
+            <div> <!-- Wrapper for password field and visibility toggle -->
+                <input type="password" id="signup-password" placeholder="Password" required /> <!-- Input field for signup password -->
+                <input type="checkbox" id="signup-show-password"> <!-- Checkbox for toggling password visibility -->
+                <label for="signup-show-password">Show Password</label> <!-- Label for the password toggle -->
+            </div>
+            <div> <!-- Wrapper for confirm password and visibility toggle -->
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required /> <!-- Confirm password field -->
+                <input type="checkbox" id="confirm-show-password"> <!-- Checkbox for toggling confirm password visibility -->
+                <label for="confirm-show-password">Show Password</label> <!-- Label for confirm password toggle -->
+            </div>
+            <button type="submit">Create Account</button> <!-- Button to submit the signup form -->
+        </form>
+        <button id="close-signup">Close</button> <!-- Button to close the signup modal -->
+    </div>
+
+    <script src="index.js"></script> <!-- Links to the JavaScript file -->
+</body>
+</html>

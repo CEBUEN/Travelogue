@@ -1,0 +1,111 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Sets a clean, sans-serif font for all text */
+    background-color: #f0f8ff; /* Light blue background for a soft aesthetic */
+    color: #003366; /* Dark blue text color for good contrast */
+    margin: 0; /* Removes default margin around the body */
+    padding: 0; /* Removes default padding around the body */
+    display: flex; /* Makes the body a flex container */
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Centers elements horizontally */
+    justify-content: center; /* Centers elements vertically */
+    min-height: 100vh; /* Ensures the body spans the full height of the viewport */
+}
+
+/* Header styling */
+header {
+    background-color: #00509e; /* Rich blue background for the header */
+    color: white; /* White text color for good contrast against the background */
+    padding: 2rem; /* Adds padding inside the header for spacing */
+    text-align: center; /* Centers the text horizontally */
+    width: 100%; /* Makes the header span the full width of the page */
+    max-width: 400px; /* Ensures the header aligns with the auth section */
+    margin-bottom: 2rem; /* Adds spacing below the header */
+    border-radius: 10px; /* Rounds the corners for consistency */
+    z-index: 10; /* Ensures the header appears above other elements */
+}
+
+/* Authentication section styling */
+#auth-section {
+    display: flex; /* Makes the auth section a flex container */
+    flex-direction: column; /* Stacks its children vertically */
+    align-items: center; /* Centers its children horizontally */
+    justify-content: center; /* Centers its children vertically */
+    margin: 0; /* Removes any margin to align with the centered body */
+    background-color: white; /* White background for contrast against the body */
+    padding: 2rem; /* Adds padding inside the auth section for spacing */
+    border-radius: 10px; /* Rounds the corners for a smoother appearance */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    width: 90%; /* Sets the width to 90% of the viewport width */
+    max-width: 400px; /* Limits the maximum width to 400px for better responsiveness */
+}
+
+/* Input field styling */
+form input {
+    padding: 0.5rem; /* Adds padding inside the input fields for spacing */
+    border-radius: 5px; /* Rounds the corners for a smoother appearance */
+    border: 1px solid #ccc; /* Adds a light gray border */
+    margin-bottom: 1rem; /* Adds space below each input field */
+    width: 100%; /* Makes the input fields span the full width of the parent */
+}
+
+/* Checkbox and label styling */
+input[type="checkbox"] {
+    margin-right: 0.5rem; /* Adds spacing between the checkbox and the label */
+    vertical-align: middle; /* Aligns the checkbox with the text */
+}
+
+label {
+    vertical-align: middle; /* Aligns the label with the checkbox */
+    font-size: 1rem; /* Sets a readable font size for the label text */
+    color: #003366; /* Matches the text color with the rest of the form */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the label */
+}
+
+/* Button styling */
+form button, #logout-button, #signup-button {
+    background-color: #007bff; /* Bright blue background for buttons */
+    color: white; /* White text color for good contrast */
+    border: none; /* Removes the default border */
+    padding: 0.75rem; /* Adds padding inside the buttons */
+    border-radius: 5px; /* Rounds the corners for a smoother appearance */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over buttons */
+    width: 100%; /* Makes the buttons span the full width of the parent */
+    margin-top: 1rem; /* Adds space above each button */
+    font-size: 1rem; /* Sets a readable font size for the buttons */
+}
+
+/* Button hover effect */
+form button:hover, #logout-button:hover, #signup-button:hover {
+    background-color: #0056b3; /* Darker blue background for buttons when hovered */
+}
+
+/* Modal styling */
+#signup-modal {
+    display: flex; /* Makes the modal a flex container */
+    flex-direction: column; /* Ensures modal content is stacked vertically */
+    align-items: center; /* Centers modal content horizontally */
+    justify-content: center; /* Centers modal content vertically */
+    position: fixed; /* Fixes the modal's position relative to the viewport */
+    top: 50%; /* Centers the modal vertically */
+    left: 50%; /* Centers the modal horizontally */
+    transform: translate(-50%, -50%); /* Perfectly centers the modal */
+    background: white; /* White background for contrast */
+    padding: 2rem; /* Adds padding inside the modal for spacing */
+    border: 1px solid #ccc; /* Adds a light gray border */
+    border-radius: 10px; /* Rounds the corners for a smoother appearance */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+    z-index: 20; /* Ensures the modal appears above other elements */
+    width: 90%; /* Sets the modal width to 90% of the viewport */
+    max-width: 400px; /* Limits the maximum modal width for better responsiveness */
+    height: auto; /* Adjusts height based on content */
+}
+
+/* Board styling */
+#board {
+    padding: 1rem; /* Adds padding around the board for spacing */
+    margin-top: 2rem; /* Adds space between the auth section and the board */
+    display: grid; /* Makes the board a grid container */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates responsive columns */
+    gap: 1rem; /* Adds spacing between grid items */
+}

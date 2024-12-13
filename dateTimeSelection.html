@@ -1,0 +1,14 @@
+<header> <!-- Defines the header section of the page -->
+    <h1>Select Date and Time</h1> <!-- Main heading for the page -->
+    <button id="back-button" class="back-button">Back</button> <!-- A button to navigate back to the previous page -->
+</header>
+<main> <!-- Defines the main content section of the page -->
+    <form id="date-time-form"> <!-- A form to select a date and time -->
+        <label for="date">Choose a date:</label> <!-- Label for the date input field -->
+        <input type="date" id="date" required> <!-- Input field for selecting a date, marked as required -->
+        <label for="time">Choose a time:</label> <!-- Label for the time input field -->
+        <input type="time" id="time" required> <!-- Input field for selecting a time, marked as required -->
+        <button type="submit">Proceed</button> <!-- Submit button to proceed after selecting the date and time -->
+    </form>
+</main>
+<script src="dateTimeSelection.js"></script> <!-- Links to the external JavaScript file containing the logic for this page -->
