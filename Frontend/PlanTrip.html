@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan a New Trip</title>
+    <link rel="stylesheet" href="PlanTrip.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <button id="back-button" class="back-button">&larr; Back</button>
+            <h1>Travelogue</h1>
+        </div>
+    </header>
+    <main>
+        <div class="form-container">
+            <h2>Plan a new trip</h2>
+            <form id="trip-form">
+                <input type="text" id="destination" placeholder="Where to? e.g. Paris, Hawaii, Japan" required>
+                <div class="date-container">
+                    <input type="date" id="start-date" placeholder="Start date">
+                    <input type="date" id="end-date" placeholder="End date">
+                </div>
+                <button type="submit" class="start-button">Start planning</button>
+            </form>
+        </div>
+    </main>
+    <script src="PlanTrip.js"></script>
+</body>
+</html>

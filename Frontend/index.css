@@ -99,6 +99,7 @@ form button:hover, #logout-button:hover, #signup-button:hover {
     width: 90%; /* Sets the modal width to 90% of the viewport */
     max-width: 400px; /* Limits the maximum modal width for better responsiveness */
     height: auto; /* Adjusts height based on content */
+    display: none; /* Initially hidden */
 }
 
 /* Board styling */
