@@ -7,6 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = "PlanTrip.html"; // Redirects to the PlanTrip page
         });
     }
+    /* if (planNewTripButton) {
+        planNewTripButton.addEventListener("click", () => {
+            window.location.href = "PlanTrip.html"; // Redirects to the PlanTrip page
+        });
+    } */
 
     if (logoutButton) {
         logoutButton.addEventListener("click", () => {

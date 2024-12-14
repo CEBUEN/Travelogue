@@ -34,32 +34,31 @@ header h1 {
     margin: 0;
 }
 
-.logout-button {
-    background-color: #ff5a5f;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    font-size: 0.9rem;
-    cursor: pointer;
-}
-
-.logout-button:hover {
-    background-color: #ff7b7f;
-}
-
-/* Button Container */
-.button-container {
+/* Button Containers */
+.button-container,
+.logout-container,
+.MyTrips-container {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.button-container {
     height: 100%;
     margin-top: 100px;
 }
 
-/* Big Button */
+.logout-container,
+.MyTrips-container {
+    height: 10vh;
+    margin-top: 20px; /* Optional: Adjust as needed for spacing */
+}
+
+/* Button Styles */
+.logout-button,
+.MyTrips-button,
 .big-button {
-    background-color: #ff5a5f;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 25px;
@@ -71,8 +70,11 @@ header h1 {
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
+.logout-button:hover,
+.MyTrips-button:hover,
 .big-button:hover {
-    background-color: #ff7b7f;
+    background-color: #0056b3;
 }
