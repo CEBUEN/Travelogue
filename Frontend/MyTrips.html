@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Trips</title>
+    <link rel="stylesheet" href="MyTrips.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <button id="back-button" class="back-button">&larr; Back</button>
+            <h1>My Trips</h1>
+        </div>
+    </header>
+    <main>
+        <div class="trips-container">
+            <h2>Your Saved Trips</h2>
+            <ul id="trips-list">
+                <!-- Example Trip -->
+                <li class="trip-item">
+                    <h3>Paris</h3>
+                    <p>Start Date: 2024-05-01</p>
+                    <p>End Date: 2024-05-10</p>
+                    <button class="view-button">View Trip</button>
+                </li>
+                <li class="trip-item">
+                    <h3>Hawaii</h3>
+                    <p>Start Date: 2024-07-15</p>
+                    <p>End Date: 2024-07-22</p>
+                    <button class="view-button">View Trip</button>
+                </li>
+            </ul>
+        </div>
+        <div class="logout-container">
+            <button id="logout-button" class="logout-button">Logout</button>
+        </div>
+    </main>
+    <script src="MyTrips.js"></script>
+</body>
+</html>

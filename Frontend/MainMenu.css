@@ -28,11 +28,19 @@ header {
     justify-content: space-between;
 }
 
-header h1 {
-    font-size: 1.8rem;
-    color: #333;
-    margin: 0;
+header {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex; /* Add flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
+
 
 /* Button Containers */
 .button-container,

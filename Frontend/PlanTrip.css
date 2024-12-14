@@ -1,20 +1,24 @@
 /* General Reset */
+/* Reset margin and padding for common elements to ensure consistent styling across browsers */
 body, h1, h2, p, a, button {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Set a default font for all text */
 }
 
+/* Body Styling */
+/* Center content vertically and horizontally, with a light background color */
 body {
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
 }
 
-/* Header */
+/* Header Styling */
+/* Add a fixed header at the top of the page with a light background and shadow */
 header {
     width: 100%;
     background-color: #fff;
@@ -23,84 +27,118 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    display: flex; /* Add flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
 
+
+/* Header Container */
+/* Layout for header content: Align items horizontally and space them out */
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header h1 {
-    font-size: 1.5rem;
-    color: #333;
-}
-
 .back-button {
-    background: none;
-    border: none;
-    font-size: 1rem;
-    color: #007bff;
-    cursor: pointer;
-    text-decoration: underline;
+    position: absolute; /* Absolute positioning to keep it on the left */
+    left: 20px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
 }
 
+/* Header Title */
+/* Style for the main header text */
+header h1 {
+    font-size: 1.5rem; /* Set font size for the title */
+    color: #333; /* Dark gray color */
+}
+
+/* Back Button */
+/* Style the back button with a link-like appearance */
+.back-button {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    font-size: 1rem; /* Set font size */
+    color: #007bff; /* Blue color for text */
+    cursor: pointer; /* Show pointer cursor on hover */
+    text-decoration: underline; /* Underline the text for emphasis */
+}
+
+/* Back Button Hover */
+/* Change color on hover for better feedback */
 .back-button:hover {
-    color: #0056b3;
+    color: #0056b3; /* Darker blue color on hover */
 }
 
 /* Main Content */
+/* Center the main content area and provide space for the fixed header */
 main {
-    margin-top: 100px;
-    width: 100%;
+    margin-top: 100px; /* Add top margin to compensate for fixed header */
+    width: 100%; /* Full width for flexibility */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center content horizontally */
 }
 
+/* Form Container */
+/* Styling for the form container with a card-like appearance */
 .form-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    text-align: center;
+    background-color: #fff; /* White background for the form */
+    padding: 20px; /* Add padding inside the container */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 400px; /* Fixed width for the form container */
+    text-align: center; /* Center align text inside the container */
 }
 
+/* Form Heading */
+/* Style the form's main heading */
 h2 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 1.8rem; /* Large font size for emphasis */
+    color: #333; /* Dark gray color */
+    margin-bottom: 20px; /* Space below the heading */
 }
 
+/* Form Styling */
+/* Layout and spacing for form inputs and buttons */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Stack elements vertically */
+    gap: 15px; /* Add spacing between form elements */
 }
 
+/* Input Fields */
+/* General styles for text and date input fields */
 input[type="text"], input[type="date"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+    width: calc(100% - 22px); /* Adjust width for alignment with padding and borders */
+    padding: 10px; /* Add padding inside the input fields */
+    border: 1px solid #ccc; /* Light gray border for input fields */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 1rem; /* Standard font size for readability */
 }
 
+/* Date Container */
+/* Layout for the date inputs: Place them side by side with a gap */
 .date-container {
-    display: flex;
-    gap: 10px;
+    display: flex; /* Use flexbox for side-by-side layout */
+    gap: 10px; /* Space between date inputs */
 }
 
+/* Start Button */
+/* Styling for the "Start planning" button */
 .start-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
+    padding: 10px 20px; /* Add padding for better click area */
+    background-color: #007bff; /* Blue background for the button */
+    color: #fff; /* White text for contrast */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    cursor: pointer; /* Pointer cursor for interactive elements */
+    font-size: 1rem; /* Standard font size for the button text */
 }
 
+/* Start Button Hover */
+/* Change background color on hover for feedback */
 .start-button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue background on hover */
 }
