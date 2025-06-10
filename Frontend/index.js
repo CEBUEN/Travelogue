@@ -8,6 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const showPasswordCheckbox = document.getElementById("show-password");
     const passwordInput = document.getElementById("password");
 
+    // For signup form
+    const signupPasswordInput = document.getElementById("signup-password");
+    const confirmPasswordInput = document.getElementById("confirm-password");
+    const signupShowPasswordCheckbox = document.getElementById("signup-show-password");
+    const confirmShowPasswordCheckbox = document.getElementById("confirm-show-password");
+
     // Reset UI state on load
     loginForm.style.display = "block";
     logoutButton.style.display = "none";
@@ -15,9 +21,19 @@ document.addEventListener("DOMContentLoaded", () => {
     board.style.display = "none";
     signupModal.style.display = "none";
 
-    // Handle "Show Password" functionality
+    // Handle "Show Password" for login form
     showPasswordCheckbox.addEventListener("change", () => {
         passwordInput.type = showPasswordCheckbox.checked ? "text" : "password";
+    });
+
+    // Handle "Show Password" for signup password
+    signupShowPasswordCheckbox.addEventListener("change", () => {
+        signupPasswordInput.type = signupShowPasswordCheckbox.checked ? "text" : "password";
+    });
+
+    // Handle "Show Password" for confirm password
+    confirmShowPasswordCheckbox.addEventListener("change", () => {
+        confirmPasswordInput.type = confirmShowPasswordCheckbox.checked ? "text" : "password";
     });
 
     // Handle "Sign Up" button

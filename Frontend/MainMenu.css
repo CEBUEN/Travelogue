@@ -1,88 +1,82 @@
-/* General Reset */
+/* General Reset: Ensures consistent styling across elements */
 body, h1, button {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    font-family: Arial, sans-serif; /* Sets default font for the page */
 }
 
+/* Body Styling */
 body {
-    background-color: #f9f9f9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    background-color: #f9f9f9; /* Light gray background for the page */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    min-height: 100vh; /* Ensures body takes at least full viewport height */
 }
 
-/* Header */
+/* Header Styling */
 header {
-    width: 100%;
-    background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%; /* Full width */
+    background-color: #fff; /* White background */
+    padding: 10px 0px; /* Adds padding inside the header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    position: fixed; /* Fixes the header at the top of the viewport */
+    top: 0; /* Aligns header to the top edge */
+    left: 0; /* Aligns header to the left edge */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center; /* Ensures text is centered */
+    margin-left: auto; /* Centers horizontally */
+    margin-right: auto; /* Centers horizontally */
 }
 
-header {
-    width: 100%;
-    background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex; /* Add flexbox */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+/* Button Containers: Layout for buttons */
+.button-container, /* General button container */
+.logout-container, /* Logout button container */
+.MyTrips-container { /* MyTrips button container */
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    margin-left: auto; /* Centers horizontally */
+    margin-right: auto; /* Centers horizontally */
 }
 
 
-/* Button Containers */
 .button-container,
 .logout-container,
 .MyTrips-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 10vh; /* Sets a height of 10% of the viewport height */
+    margin-top: 0px; /* Adds spacing above the containers */
+    margin-left: auto; /* Centers horizontally */
+    margin-right: auto; /* Centers horizontally */
 }
 
-.button-container {
-    height: 100%;
-    margin-top: 100px;
-}
-
-.logout-container,
-.MyTrips-container {
-    height: 10vh;
-    margin-top: 20px; /* Optional: Adjust as needed for spacing */
-}
-
-/* Button Styles */
-.logout-button,
-.MyTrips-button,
-.big-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* Button Styles: General styles for all buttons */
+.logout-button, /* Logout button */
+.MyTrips-button, /* MyTrips button */
+.big-button { /* General big button */
+    background-color: #007bff; /* Primary blue background color */
+    color: white; /* White text color */
+    border: none; /* Removes default border */
+    border-radius: 25px; /* Rounds the corners */
+    padding: 15px 30px; /* Adds spacing inside the button */
+    font-size: 1.2rem; /* Sets a larger font size */
+    font-weight: bold; /* Makes the text bold */
+    display: flex; /* Enables flexbox layout for content inside the button */
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-left: auto; /* Centers horizontally */
+    margin-right: auto; /* Centers horizontally */
 }
 
-.logout-button:hover,
-.MyTrips-button:hover,
+/* Button Hover Effects */
+.logout-button:hover, /* Logout button hover state */
+.MyTrips-button:hover, /* MyTrips button hover state */
 .big-button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue color on hover */
 }
