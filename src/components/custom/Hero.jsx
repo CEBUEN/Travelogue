@@ -8,23 +8,22 @@ function Hero() {
       {/* Heading */}
       <h1 className="font-extrabold text-[40px] sm:text-[50px] leading-tight">
         <span className="text-[#0a90c5]">
-          Discover Your Next Adventure with AI:
+          Unlock Your Perfect Trip with AI:
         </span>
         <br />
-        Personalized Itineraries at Your Fingertips
+        Tailored Travel Plans in Seconds
       </h1>
 
       {/* Subtext */}
       <p className="text-xl text-gray-500 mt-6 max-w-2xl">
-        Your personal trip planner and travel curator, creating custom itineraries
-        tailored to your interests and budget.
+        Smart travel planning made easy custom itineraries designed around your style, budget, and interests.
       </p>
 
       {/* Call-to-action button */}
       <div className="mt-6">
         <Link to="/create-trip">
           <Button size="lg" className="text-white bg-black hover:bg-gray-800">
-            Get Started, It’s Free
+            Build My Adventure
           </Button>
         </Link>
       </div>

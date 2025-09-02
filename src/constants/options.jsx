@@ -4,30 +4,30 @@ export const SelectTravelsList = [
   {
     id: 1,
     title: 'Just Me',
-    desc: 'A sole traveler in exploration',
-    icon: '✈',
+    desc: 'Wandering the world, solo style',
+    icon: '🤸🏻',
     people: '1',
   },
   {
     id: 2,
     title: 'A Couple',
-    desc: 'Two travelers in tandem',
-    icon: '👫',
+    desc: 'Two hearts, one adventure',
+    icon: '👩🏻‍❤️‍👨🏻',
     people: '2 People',
   },
   {
     id: 3,
     title: 'Family',
-    desc: 'A group of fun loving adventurers',
-    icon: '👨‍👩‍👧‍👦',
+    desc: 'A journey made for all ages',
+    icon: '👨🏻‍👩🏻‍👧🏻‍👧🏻',
     people: '3 to 5 People',
   },
   {
     id: 4,
     title: 'Friends',
-    desc: 'A trip with your favorite crew',
-    icon: '👯',
-    people: '2 to 6 People',
+    desc: 'Exploring with your best crew',
+    icon: '🤝🏻',
+    people: '2 to 5 People',
   },
 ]
 
@@ -35,20 +35,20 @@ export const SelectBudgetOptions = [
   {
     id: 1,
     title: 'Cheap',
-    desc: 'Stay conscious of costs',
-    icon: '💰',
+    desc: 'Keep it simple and affordable',
+    icon: '🪙',
   },
   {
     id: 2,
     title: 'Moderate',
-    desc: 'Keep cost on the average side',
-    icon: '💵',
+    desc: 'Balance comfort and cost',
+    icon: '💸',
   },
   {
     id: 3,
     title: 'Luxury',
-    desc: 'Don’t worry about cost',
-    icon: '🏖',
+    desc: 'Indulge without limits',
+    icon: '🚤',
   },
 ]
 

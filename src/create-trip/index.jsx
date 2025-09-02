@@ -3,6 +3,7 @@ import GooglePlacesAutocomplete from 'react-google-places-autocomplete'
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { SelectBudgetOptions, SelectTravelsList } from "@/constants/options"
+import { toast } from 'sonner'
 
 function CreateTrip() {
   const [place, setPlace] = useState()
@@ -17,9 +18,19 @@ function CreateTrip() {
   }, [formData])
 
   const OnGenerateTrip = () => {
-    if (formData?.noOfDays > 5) {
+    // mirror the screenshot: validate inputs (max 5 days, all required fields present)
+    if (
+      formData?.noOfDays > 5 ||
+      !formData?.location ||
+      !formData?.budget ||
+      !formData?.travelGroup
+    ) {
+      toast('Please complete all fields. Max trip length is 5 days.')
       return
     }
+
+    // success toast (you can rename message to match your flow)
+    toast('Event has been created')
     console.log(formData)
   }
 
@@ -27,7 +38,7 @@ function CreateTrip() {
     <div className="sm:px-10 md:px-32 lg:px-56 xl:px-72 px-5 mt-10">
       <h2 className="font-bold text-3xl">Tell us your travel preferences</h2>
       <p className="mt-3 text-gray-500 text-xl">
-        Just provide some basic information, and we’ll do the rest.
+        Simply fill in the basics, and we’ll handle the planning.
       </p>
 
       <div className="mt-20 flex flex-col gap-10">
@@ -49,10 +60,10 @@ function CreateTrip() {
         {/* Days */}
         <div>
           <h2 className="text-xl my-3 font-medium">How many days are you planning?</h2>
-          <Input
+        <Input
             placeholder="Ex: 3"
             type="number"
-            onChange={(e) => handleInputChange('noOfDays', e.target.value)}
+            onChange={(e) => handleInputChange('noOfDays', Number(e.target.value))}
           />
         </div>
 
@@ -96,7 +107,7 @@ function CreateTrip() {
 
         {/* Generate Trip */}
         <div className="my-10 justify-end flex">
-          <Button onClick={OnGenerateTrip}>Generate Trip</Button>
+          <Button onClick={OnGenerateTrip}>Create My Trip</Button>
         </div>
       </div>
     </div>
